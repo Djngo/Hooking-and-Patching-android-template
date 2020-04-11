@@ -18,7 +18,7 @@ And the KittyMemory repo by MJx0 here https://github.com/MJx0/KittyMemory
 
 **Change the outputed library name:**
 * [Android.mk](https://github.com/Djngo/Hooking-and-Patching-android-template/blob/master/jni/Android.mk) Replace the default name by whatever you want at "LOCAL_MODULE :="
-* [libLoader$1.smali](https://github.com/Djngo/Hooking-and-Patching-android-template/blob/master/Smali%20Files/libLoader%241.smali) Change it in this file aswell (line 38)
+* [libLoader$1.smali](https://github.com/Djngo/Hooking-and-Patching-android-template/blob/master/Smali%20Files/libLoader%241.smali) Change it in this file as well. (line 38)
 <br>
 
 ## Loading the lib.so
