@@ -1,7 +1,7 @@
 # Hooking-and-Patching-android-template
 This is a template for the usage of Cydia Substrate and KittyMemory. **(Does not support arm64)**
 
-It is base on an already made hooking template by joeyjurjens/Ted2 here https://github.com/joeyjurjens/Android-Hooking-Template
+It is based on an already made hooking template by joeyjurjens/Ted2 here https://github.com/joeyjurjens/Android-Hooking-Template
 
 And the KittyMemory repo by MJx0 here https://github.com/MJx0/KittyMemory
 
