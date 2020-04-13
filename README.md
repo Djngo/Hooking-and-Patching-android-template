@@ -13,17 +13,17 @@ And the KittyMemory repo by MJx0 here https://github.com/MJx0/KittyMemory
 <br>
 
 ## How to use
-* [main.cpp](https://github.com/Djngo/Hooking-and-Patching-android-template/blob/master/jni/main.cpp) This is where you will write your hooks and patches.
-* [Utils.h](https://github.com/Djngo/Hooking-and-Patching-android-template/blob/master/jni/Utils.h) Edit the targeted library here.
+* [main.cpp](https://github.com/Djngo/Hooking-and-Patching-android-template/blob/master/jni/src/main.cpp) This is where you will write your hooks and patches.
+* [Utils.h](https://github.com/Djngo/Hooking-and-Patching-android-template/blob/master/jni/include/Utils.h) Edit the targeted library here.
 
 **Change the outputed library name:**
 * [Android.mk](https://github.com/Djngo/Hooking-and-Patching-android-template/blob/master/jni/Android.mk) Replace the default name by whatever you want at "LOCAL_MODULE :="
-* [libLoader$1.smali](https://github.com/Djngo/Hooking-and-Patching-android-template/blob/master/Smali%20Files/libLoader%241.smali) Change it in this file as well. (line 38)
+* [libLoader$1.smali](https://github.com/Djngo/Hooking-and-Patching-android-template/blob/master/Smali%20Files/loadLib/libLoader%241.smali) Change it in this file as well. (line 38)
 <br>
 
 ## Loading the lib.so
 First we need to compile our project.
-* Edit compile.bat & paste your ndk-build **path location** in the first line and the **project location** next to "NDK_PROJECT_PATH=".
+* Edit compile.bat & paste your ndk-build **path location** next to cd and the **project location** next to "NDK_PROJECT_PATH=" and "NDK_APPLICATION_MK=".
 * Once compiled you'll have 2 new file in your project **libs** and **obj**.
 In order to load your <b>lib.so</b>, you'll need to decompile the apk, you can use Apk Easy Tool for this.
 * Go to *Libs* and copy the created lib.so in the Lib folder of your game.
