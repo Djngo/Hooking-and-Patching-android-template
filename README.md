@@ -1,5 +1,5 @@
 # Hooking-and-Patching-android-template
-This is a template for the usage of Cydia Substrate and KittyMemory. **(Does not support arm64)**
+This is a template for the usage of Cydia Substrate and KittyMemory. **(Does not support arm64 yet)**
 
 It is based on an already made hooking template by joeyjurjens/Ted2 here https://github.com/joeyjurjens/Android-Hooking-Template
 
@@ -27,8 +27,7 @@ First we need to compile our project.
 * Once compiled you'll have 2 new file in your project **libs** and **obj**.
 In order to load your <b>lib.so</b>, you'll need to decompile the apk, you can use Apk Easy Tool for this.
 * Go to *Libs* and copy the created lib.so in the Lib folder of your game.
-* Navigate to "<b>/smali/com</b>" & create a folder called "<b>loadLib</b>"
-* Copy the two .smali files provided in the smali folder from this Git, inside of that folder.
+* Navigate to "<b>/smali/com</b>" & copy the loadLib from this git inside of that folder.
 * Open the AndroidManifest.xml file in the decompiled apk and search this 
 
 ```xml
