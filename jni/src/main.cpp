@@ -20,7 +20,7 @@ float (Player_getSkillCooldown)(void *instance) {
 	if(instance!=NULL) {
 		return 0;
 	}
-	old_Player_getSkillCooldown(instance);
+	return old_Player_getSkillCooldown(instance);
 }
 
 float (*old_Player_getWeaponDamage)(void *instance);
@@ -28,7 +28,7 @@ float Player_getWeaponDamage(void *instance) {
 	if(instance!=NULL) {
 		return 1000000;
 	}
-	old_Player_getWeaponDamage(instance);
+	return old_Player_getWeaponDamage(instance);
 }
 
 __attribute__((constructor))
