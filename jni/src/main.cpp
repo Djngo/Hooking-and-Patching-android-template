@@ -1,12 +1,12 @@
 #include <jni.h>
 //#include <android/log.h>
-#include "KittyMemory/MemoryPatch.h"
-#include <Substrate/CydiaSubstrate.h>
+#include "libs/KittyMemory/MemoryPatch.h"
+#include <libs/Substrate/CydiaSubstrate.h>
 #include <memory.h>
 #include <dlfcn.h>
 #include <cstdio>
 #include <cstdlib>
-#import "Utils.h"
+#import "include/Utils.h"
 
 //Struct for patches
 struct My_Patches {
