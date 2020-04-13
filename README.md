@@ -1,5 +1,5 @@
 # Hooking-and-Patching-android-template
-This is a template for the usage of Cydia Substrate and KittyMemory. **(Does not support arm64 yet)**
+This is a template for the usage of Cydia Substrate and KittyMemory. **(Does not support aarch64 yet)**
 
 It is based on an already made hooking template by joeyjurjens/Ted2 here https://github.com/joeyjurjens/Android-Hooking-Template
 
@@ -23,7 +23,7 @@ And the KittyMemory repo by MJx0 here https://github.com/MJx0/KittyMemory
 
 ## Loading the lib.so
 First we need to compile our project.
-* Edit compile.bat & paste your ndk-build **path location** next to cd and the **project location** next to "NDK_PROJECT_PATH=" and "NDK_APPLICATION_MK=".
+* Edit Build.bat & paste your ndk-build **path location** next to cd and the **project location** next to "NDK_PROJECT_PATH=" and "NDK_APPLICATION_MK=" save and start it.
 * Once compiled you'll have 2 new file in your project **libs** and **obj**.
 In order to load your <b>lib.so</b>, you'll need to decompile the apk, you can use Apk Easy Tool for this.
 * Go to *Libs* and copy the created lib.so in the Lib folder of your game.
