@@ -23,8 +23,8 @@ float (Player_getSkillCooldown)(void *instance) {
 	return old_Player_getSkillCooldown(instance);
 }
 
-float (*old_Player_getWeaponDamage)(void *instance);
-float Player_getWeaponDamage(void *instance) {
+int (*old_Player_getWeaponDamage)(void *instance);
+int Player_getWeaponDamage(void *instance) {
 	if(instance!=NULL) {
 		return 1000000;
 	}
@@ -46,6 +46,7 @@ void libhook_main() {
 	my_cool_Patches.BypassAnticheat = MemoryPatch(libName, 0xF0458A5, "\x1e\xff\x2f\xe1", 4);	//bx lr
 	my_cool_Patches.BypassAnticheat.Modify();
 	
-	//Hooking example.
+	//Usual Hook example.
+	MSHookFunction((void *)getRealOffset(0x1A2E30A), (void *)Player_getSkillCooldown, (void **) &old_Player_getSkillCooldown);
     MSHookFunction((void *)getRealOffset(0x1A2EF90), (void *)Player_getWeaponDamage, (void **) &old_Player_getWeaponDamage);
 }
