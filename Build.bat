@@ -12,7 +12,7 @@ echo project path: !pp!
 )
 echo.
 echo What architecture do you need ?
-echo 1. armeabi-v7a (w/ x86) 2. arm64-v8a 3. All
+echo 1. armeabi-v7a 2. arm64-v8a 3. All
 goto archCheck
 :archPrompt
 set /p "archt=Enter choice: "
