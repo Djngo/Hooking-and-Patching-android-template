@@ -1,0 +1,2 @@
+C:\Users\Admin\Desktop\MODDING\Tools\android-ndk-r16b
+C:\Users\Admin\Desktop\Hooking-and-Patching-android-template-master
